@@ -6,15 +6,12 @@ To develop a neural network regression model for the given dataset.
 
 ## THEORY
 
-Neural networks consist of simple input/output units called neurons (inspired by human brain neurons). These input/output units are interconnected and each connection has a weight associated with it. Neural networks are flexible and can be used for both classification and regression. In this article, we will see how neural networks can be applied to regression problems.
-
-Regression helps establish a relationship between a dependent variable and one or more independent variables. Regression models work well only when the regression equation is a good fit for the data. Most regression models will not fit the data perfectly. Although neural networks are complex and computationally expensive, they are flexible and can dynamically pick the best type of regression, and if that is not enough, hidden layers can be added to improve prediction.
-
 First import the libraries that we will use Import the dataset and check the types of the columns Now build your training and test set from the dataset Here we are making the neural network 2 hidden layers with 1 output and input layer and an activation layer as relu and with their nodes in them. Now we will fit our dataset and then predict the value.
 
 ## Neural Network Model
 
-![Screenshot 2024-02-21 140031](https://github.com/etjabajasphin/basic-nn-model/assets/151705853/b468976c-c7e3-49ff-b5a3-f2a066b3cfe7)
+![Screenshot 2024-03-17 204822](https://github.com/karuniya2005/basic-nn-model/assets/145972215/fd09087d-2b96-4e3e-b525-914caef67e83)
+
 
 ## DESIGN STEPS
 
@@ -50,6 +47,7 @@ Evaluate the model with the testing data.
 ### Name: KARUNIYA M
 ### Register Number: 212223240068
 ```
+
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler
@@ -75,8 +73,8 @@ Scaler = MinMaxScaler()
 Scaler.fit(X_train)
 X_train1 = Scaler.transform(X_train)
 ai_brain = Sequential([
-    Dense(6,activation = 'relu'),
-    Dense(6,activation = 'relu'),
+    Dense(5,activation = 'relu'),
+    Dense(4,activation = 'relu'),
     Dense(1)
 ])
 ai_brain.compile(optimizer = 'rmsprop', loss = 'mse')
@@ -85,26 +83,33 @@ loss_df = pd.DataFrame(ai_brain.history.history)
 loss_df.plot()
 X_test1 = Scaler.transform(X_test)
 ai_brain.evaluate(X_test1,y_test)
-X_n1 = [[30]]
+X_n1 = [[10]]
 X_n1_1 = Scaler.transform(X_n1)
 ai_brain.predict(X_n1_1)
 
+
 ```
 ## Dataset Information
-![Screenshot 2024-02-21 141344](https://github.com/etjabajasphin/basic-nn-model/assets/151705853/6ec9fd30-2cdb-452a-b4c5-c6d5989ed869)
+![Screenshot 2024-03-17 204436](https://github.com/karuniya2005/basic-nn-model/assets/145972215/45e8cc5a-21bb-4a98-91e6-f7af1137748f)
+
+![Screenshot 2024-03-17 204444](https://github.com/karuniya2005/basic-nn-model/assets/145972215/2868f19c-bcbf-421a-9950-964de387e749)
+
 
 ## OUTPUT
 
 ### Training Loss Vs Iteration Plot
-![Screenshot 2024-02-21 141255](https://github.com/etjabajasphin/basic-nn-model/assets/151705853/82360829-4326-412e-b549-3eeda78c092b)
+
+![Screenshot 2024-03-17 204500](https://github.com/karuniya2005/basic-nn-model/assets/145972215/df7f78bc-2b3c-454d-ab5f-89b194f88d4c)
+
 
 ### Test Data Root Mean Squared Error
-![Screenshot 2024-02-21 142334](https://github.com/etjabajasphin/basic-nn-model/assets/151705853/0068d0ed-c280-4cbf-ada0-e5ddf03e44a7)
+
+![Screenshot 2024-03-17 204507](https://github.com/karuniya2005/basic-nn-model/assets/145972215/9fcafcf7-ce32-4ecf-85b1-d8be85360bad)
+
 
 
 ### New Sample Data Prediction
-![Screenshot 2024-02-21 142347](https://github.com/etjabajasphin/basic-nn-model/assets/151705853/29d51e6e-8282-4df1-a222-6a2dc0909294)
-
+![Screenshot 2024-03-17 204518](https://github.com/karuniya2005/basic-nn-model/assets/145972215/a9132d2a-208c-49ff-ac0b-a06aa2346422)
 
 
 ## RESULT
