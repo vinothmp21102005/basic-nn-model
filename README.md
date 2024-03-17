@@ -47,8 +47,8 @@ Plot the performance plot
 Evaluate the model with the testing data.
 
 ## PROGRAM
-### Name: SREEKUMAR S
-### Register Number: 212223240157
+### Name: KARUNIYA M
+### Register Number: 212223240068
 ```
 import pandas as pd
 from sklearn.model_selection import train_test_split
