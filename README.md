@@ -103,18 +103,15 @@ ai_brain.predict(X_n1_1)
 
 ### Training Loss Vs Iteration Plot
 
-![Screenshot 2024-02-21 145829](https://github.com/vinothmp21102005/basic-nn-model/assets/145972215/a0c282cc-995c-47cd-9c2f-d8e968ce52ad)
+![alt text](image.png)
 
 
 ### Test Data Root Mean Squared Error
-
-![Screenshot 2024-02-21 150038](https://github.com/vinothmp21102005/basic-nn-model/assets/145972215/fbc56f9e-3f9b-46a8-af95-1abb15d30cd6)
-
+![alt text](<Screenshot 2024-03-23 093621.png>)
 
 ### New Sample Data Prediction
 
-![Screenshot 2024-02-21 150119](https://github.com/vinothmp21102005/basic-nn-model/assets/145972215/06d74ade-63a8-494a-8964-61d846b02e79)
-
+![alt text](<Screenshot 2024-03-23 093630.png>)
 
 ## RESULT
 
